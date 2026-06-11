@@ -1,0 +1,29 @@
+{
+  "name": "ep_2_igniting_our_app",
+  "version": "1.0.0",
+  "description": "ep revision baache",
+  "keywords": [
+    "monukd01dev",
+    "react",
+    "parcel"
+  ],
+  "homepage": "https://github.com/monukd01dev/MERN-Revision#readme",
+  "bugs": {
+    "url": "https://github.com/monukd01dev/MERN-Revision/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monukd01dev/MERN-Revision.git"
+  },
+  "license": "ISC",
+  "author": "monukd01dev",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
