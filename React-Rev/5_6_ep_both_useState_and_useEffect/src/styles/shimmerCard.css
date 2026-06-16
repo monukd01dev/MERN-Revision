@@ -1,0 +1,79 @@
+/* --- Base Shimmer Card Container --- */
+.shimmer-card {
+    width: 294px; /* Exact tumhare real card ke size se match karta hua maths (1250px container base) */
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 32px;
+    
+}
+
+/* --- Core Shimmer Loading Animation (The Wave) --- */
+@keyframes shimmerWave {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Global class jo har element par light reflection effect lagayegi */
+.shimmer-figure,
+.shimmer-line {
+    background: linear-gradient(
+        90deg,
+        #f2f2f2 25%,
+        #e6e6e6 37%,
+        #f2f2f2 63%
+    );
+    background-size: 200% 100%;
+    animation: shimmerWave 1.4s infinite linear; /* Fixed loop wave timing */
+}
+
+/* --- Image Container Box Skeleton --- */
+.shimmer-figure {
+    width: 100%;
+    height: 165px; /* Exact matching height jo humne real cards ki fix ki thi */
+    border-radius: 16px;
+}
+
+/* --- Text Details Box Wrapper --- */
+.shimmer-details {
+    padding: 12px 8px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Bars ke beech ka spacing */
+    padding: 20px 10px;
+}
+
+/* Base style for text skeleton lines (Yahan se cut hua tha) */
+.shimmer-line {
+    border-radius: 4px;
+    height: 14px;
+}
+
+/* 🏢 1. Restaurant Name Line */
+.shimmer-title {
+    width: 70%; /* Naam thoda lamba hota hai */
+    height: 18px; /* Heading hai toh thodi moti line */
+    margin-bottom: 4px;
+}
+
+/* ⭐ 2. Rating & Time Line */
+.shimmer-meta {
+    width: 45%; /* Rating + time thoda chota block hota hai */
+    height: 14px;
+}
+
+/* 🍕 3. Cuisine Line */
+.shimmer-cuisine {
+    width: 85%; /* Cuisines lambe hote hain (Chinese, North Indian...) */
+    height: 12px;
+}
+
+/* 📍 4. Location Line */
+.shimmer-location {
+    width: 55%; /* Location block */
+    height: 12px;
+}

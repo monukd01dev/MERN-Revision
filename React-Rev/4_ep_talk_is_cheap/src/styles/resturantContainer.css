@@ -1,0 +1,88 @@
+.resturant-wrapper {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    #header {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid black;
+
+        .available-restros {
+            height: inherit;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 5px;
+
+            p {
+
+                font-size: 1.5rem;
+            }
+        }
+
+
+        .filters {
+            height: 100%;
+
+            ul {
+                height: inherit;
+                display: flex;
+                align-items: center;
+                column-gap: 1rem;
+
+                li {
+                    button {
+                        padding: 5px 15px;
+                        background-color: white;
+                        border: none;
+                        outline: 1px solid black;
+                        border-radius: 25px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .resturant-cards {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* Left se line shuru hogi */
+    justify-content: flex-start; 
+    
+    /* 4 cards ke liye exact gap set kar diya */
+    column-gap: 24px; 
+    row-gap: 32px; 
+}
+
+.restro-card {
+    /* 🌟 PERFECT MATHS: 1250px mein exact 4 cards fit karne ke liye */
+    width: 294px; 
+    
+    /* Safe dynamic method (optional): Agar screen thodi choti-badi ho toh automatic 4 card ka size nikalega */
+    /* width: calc((100% - (3 * 24px)) / 4); */
+    
+    cursor: pointer;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Image container ki height thodi kam kar dete hain taaki naye card size mein photo chipti na lage */
+.restro-card figure {
+    position: relative;
+    width: 100%;
+    height: 165px; /* Width choti hui hai toh height bhi thodi balance kar di */
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 0;
+}
+}

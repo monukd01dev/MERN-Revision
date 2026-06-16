@@ -1,0 +1,142 @@
+/* --- Background Video & Container Layout --- */
+.search-wrapper {
+    position: relative; /* Video aur overlay ko boundary dene ke liye */
+    width: 100%;
+    height: 350px; /* Thoda height badha diya taaki video achhi dikhe */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    overflow: hidden; /* Taaki video rounded corners se bahar na nikle */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Background Video Styling */
+.search-wrapper .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Video bina stretch huye poore box ko cover karegi */
+    z-index: 1;
+}
+
+/* Translucent Dark Overlay layer */
+.search-wrapper .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 2;
+}
+
+/* --- Form & Search Bar Styling --- */
+.search-form {
+    position: relative;
+    z-index: 3; /* Video aur overlay ke upar lane ke liye */
+    width: 100%;
+    max-width: 600px; /* Max safe size for desktop */
+    padding: 0 20px; /* Mobile responsive margins */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Dynamic Heading Over Video */
+.search-form h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+/* Input Group Wrapper */
+.input-grp {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 100px; /* Pure rounded pill-shape look */
+    padding: 6px; /* Inner spacing like a container */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus effect on the whole search bar row */
+.input-grp:focus-within {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(234, 88, 12, 0.4); /* Subtle orange/red glow placeholder */
+}
+
+/* Input Field Setup */
+.input-grp input {
+    flex: 1; /* Jitna space bachega, input poora le lega (Responsive magic) */
+    border: none;
+    background: none;
+    outline: none;
+    padding: 12px 24px;
+    font-size: 1.05rem;
+    color: #1f2937;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Custom Placeholder styling */
+.input-grp input::placeholder {
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+/* Sexy Modern Button Styling */
+.input-grp button {
+    border: none;
+    outline: none;
+    background-color: #ea580c; /* High-energy food orange brand color */
+    color: #ffffff;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 100px; /* Inside pill matching style */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Button Hover State */
+.input-grp button:hover {
+    background-color: #c2410c; /* Darker orange on hover */
+}
+
+.input-grp button:active {
+    transform: scale(0.95); /* Button click zoom-out effect */
+}
+
+/* --- 📱 RESPONSIVENESS (Mobile Devices) --- */
+@media (max-width: 480px) {
+    .search-wrapper {
+        height: 280px; /* Choti screen par height thodi adjust */
+    }
+    
+    .search-form h2 {
+        font-size: 1.5rem; /* Heading scales down nicely */
+    }
+    
+    .input-grp {
+        padding: 4px;
+    }
+    
+    .input-grp input {
+        padding: 10px 16px;
+        font-size: 0.95rem;
+    }
+    
+    .input-grp button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}

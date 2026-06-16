@@ -1,0 +1,77 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import "./app.css";
+@import "./header.css";
+@import "./nav.css";
+@import "./main.css";
+@import "./search.css";
+@import "./restroCard.css";
+@import "./resturantContainer.css";
+@import "./shimmerCard.css";
+@import "./footer.css";
+
+/* Core Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix media element behaviors */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+  appearance: none;
+  -webkit-appearance: none; /* Safari/Chrome ke liye */
+  -moz-appearance: none;    /* Firefox ke liye */
+  outline: none;
+}
+
+:root {
+  /* Color Palette */
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --background-color: #f8fafc;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-main: 'Poppins', sans-serif;
+  
+  /* Layout/Spacing Tokens */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --transition-fast: 0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+
+/* Consistent link styling */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Quick list reset since <ul> is rarely used for raw bullet points in modern UI */
+ul, ol {
+  list-style: none;
+}

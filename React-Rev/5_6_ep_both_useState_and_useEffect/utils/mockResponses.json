@@ -1,0 +1,738 @@
+{
+    "mock_page_1": {
+        "statusCode": 0,
+        "data": {
+            "pageOffset": {
+                "nextOffset": "mock_page_2"
+            },
+            "cards": [
+                {
+                    "card": {
+                        "card": {
+                            "gridElements": {
+                                "infoWithStyle": {
+                                    "restaurants": [
+                                        {
+                                            "info": {
+                                                "id": "807783",
+                                                "name": "Burger King",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/a049117e-1a3d-4ca0-94a0-9e25a17879df_807783.jpg",
+                                                "areaName": "Chandni Chowk",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Burgers", "American"],
+                                                "sla": { "deliveryTime": 38, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹59" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1328704",
+                                                "name": "Third Wave Coffee",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/7/15/3d4bb866-07ba-4c38-98d9-185645d25dc3_404938.JPG",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.6,
+                                                "cuisines": ["Desserts", "Beverages", "Cafe"],
+                                                "sla": { "deliveryTime": 32, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹169" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "88982",
+                                                "name": "Taco Bell",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/7/10/5367378a-4509-4a79-aae9-53cbeeb23ea4_88982.JPG",
+                                                "areaName": "Kamla Nagar",
+                                                "avgRating": 4.2,
+                                                "cuisines": ["Mexican", "Fast Food"],
+                                                "sla": { "deliveryTime": 32, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "798674",
+                                                "name": "Wow! Momo",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/30/f364b773-d901-4f53-bd41-ade71823bef7_798674.jpg",
+                                                "areaName": "Omaxe Chowk",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Momos", "Chinese"],
+                                                "sla": { "deliveryTime": 40, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹99" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "642951",
+                                                "name": "Social",
+                                                "cloudinaryImageId": "vcrqkiimqbszigatwroq",
+                                                "areaName": "Alipur Road",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["North Indian", "Chinese", "Fast Food"],
+                                                "sla": { "deliveryTime": 33, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "50% OFF", "discountTag": "FLAT DEAL" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "396278",
+                                                "name": "The Yellow Bowl",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/2/21/5a553c4c-7bb6-458d-8661-53ed13f5860a_396278.jpg",
+                                                "areaName": "Daryaganj",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Chinese", "Momos", "Tandoori"],
+                                                "sla": { "deliveryTime": 30, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "50% OFF", "discountTag": "FLAT DEAL" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "817359",
+                                                "name": "Zahra Restaurant & Cafe",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/4/a005407d-a1b3-4ce3-95b4-82e7fb367781_817359.JPG",
+                                                "areaName": "Jama Masjid",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Biryani", "Mughlai", "North Indian", "Snacks"],
+                                                "sla": { "deliveryTime": 31, "serviceability": "SERVICEABLE", "slaString": "30-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "60% OFF", "subHeader": "UPTO ₹120" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "58098",
+                                                "name": "Bhappe Di Hatti",
+                                                "cloudinaryImageId": "z1norad5zvppsltrplti",
+                                                "areaName": "Krishna Nagar",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["North Indian"],
+                                                "sla": { "deliveryTime": 29, "serviceability": "SERVICEABLE", "slaString": "25-30 mins" },
+                                                "aggregatedDiscountInfoV2": {}
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "984627",
+                                                "name": "Balaji Restaurant",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/3/990e585c-e6f0-4862-b7e7-fd9b33ba4395_984627.JPG",
+                                                "areaName": "Old Delhi",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Street Food"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹99" }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "mock_page_2": {
+        "statusCode": 0,
+        "data": {
+            "pageOffset": {
+                "nextOffset": "mock_page_3"
+            },
+            "cards": [
+                {
+                    "card": {
+                        "card": {
+                            "gridElements": {
+                                "infoWithStyle": {
+                                    "restaurants": [
+                                        {
+                                            "info": {
+                                                "id": "1051385",
+                                                "name": "Shahi Darbar",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/2/24/1f1b5511-6e84-4b7a-920d-691fb8d27610_1051385.jpg",
+                                                "areaName": "Old Delhi",
+                                                "avgRating": 3.8,
+                                                "cuisines": ["Paan"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹49" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "202628",
+                                                "name": "Amritsariya",
+                                                "cloudinaryImageId": "tp9jwftm7z5h4zornwhn",
+                                                "areaName": "Civil Lines",
+                                                "avgRating": 3.9,
+                                                "cuisines": ["North Indian"],
+                                                "sla": { "deliveryTime": 32, "serviceability": "SERVICEABLE", "slaString": "30-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹49" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "831067",
+                                                "name": "Big Bowl",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/22/30548ac4-2e57-4c1d-ba73-8372f74a1ad2_831067.JPG",
+                                                "areaName": "Omaxe mall",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Chinese", "Tibetan", "Desserts"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "35-45 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "411049",
+                                                "name": "Manohar Bikkaneri",
+                                                "cloudinaryImageId": "yxyrqgtyjadfobpyoidg",
+                                                "areaName": "Azad Market",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["Bakery", "Sweets"],
+                                                "sla": { "deliveryTime": 30, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹29" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "855005",
+                                                "name": "Starbucks Coffee",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/5/4/b3a6d1e9-1944-4e5c-8184-e8cc470d0072_855005.JPG",
+                                                "areaName": "Chandni Chowk",
+                                                "avgRating": 4.7,
+                                                "cuisines": ["Beverages", "Cafe", "Snacks", "Desserts", "Bakery", "Ice Cream"],
+                                                "sla": { "deliveryTime": 51, "serviceability": "SERVICEABLE", "slaString": "50-60 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "₹75 OFF", "subHeader": "ABOVE ₹169", "discountTag": "FLAT DEAL" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "107452",
+                                                "name": "Chaayos Chai+Snacks",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/2ce18342-6c04-4ebc-9725-788819ddaa56_107452.JPG",
+                                                "areaName": "Kashmere Gate",
+                                                "avgRating": 4.6,
+                                                "cuisines": ["Beverages", "Chaat", "Bakery", "Snacks", "Street Food", "healthy", "Home Food", "Maharashtrian", "Italian", "Desserts"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹104" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "438612",
+                                                "name": "Baskin Robbins",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/24/81bc2704-e141-4ff5-9159-416f9bab4b95_438612.jpg",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.6,
+                                                "cuisines": ["Desserts", "Ice Cream"],
+                                                "sla": { "deliveryTime": 32, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹51" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "395433",
+                                                "name": "Bikanervala",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/20/384c7f3f-335c-445c-8380-c46045daa0e9_395433.jpg",
+                                                "areaName": "Chandni Chowk",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["Street Food", "Sweets"],
+                                                "sla": { "deliveryTime": 40, "serviceability": "SERVICEABLE", "slaString": "35-45 mins" },
+                                                "aggregatedDiscountInfoV2": {}
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1389610",
+                                                "name": "Frontier Biscuit",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/5/13227feb-3a39-4fed-837b-b8c0129c4465_1221562.JPG",
+                                                "areaName": "Old Delhi",
+                                                "avgRating": 4.8,
+                                                "cuisines": ["Bakery", "Snacks", "Indian"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV2": {}
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "44972",
+                                                "name": "Om di Hatti",
+                                                "cloudinaryImageId": "ypoamjz9lkaxlsf6075j",
+                                                "areaName": "Kamla Nagar",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Fast Food", "Snacks"],
+                                                "sla": { "deliveryTime": 30, "serviceability": "SERVICEABLE", "slaString": "25-30 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹39" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "53436",
+                                                "name": "Dhaba Food",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/4/ee9f8b50-2fa8-4222-8eec-b5180d872cdd_53436.jpg",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.7,
+                                                "cuisines": ["Indian"],
+                                                "sla": { "deliveryTime": 29, "serviceability": "SERVICEABLE", "slaString": "25-30 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹59" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "557536",
+                                                "name": "Jain Chawal Wale",
+                                                "cloudinaryImageId": "wcukmm7fiutjckbywzs0",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.2,
+                                                "cuisines": ["North Indian", "Snacks", "Beverages"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV2": {}
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "381240",
+                                                "name": "Andhra Bhawan Canteen",
+                                                "cloudinaryImageId": "ce3d145ebab6d0d9bf32adb050c92166",
+                                                "areaName": "Janpath",
+                                                "avgRating": 4.5,
+                                                "cuisines": ["Andhra", "South Indian", "Indian"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1251064",
+                                                "name": "Chelvies Coffee",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/11/1/76e7e29c-6431-4091-88d3-6077998b68b6_1251064.jpg",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Desserts", "Beverages", "Cafe"],
+                                                "sla": { "deliveryTime": 31, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "859167",
+                                                "name": "Chicago Pizza",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/11/25/3c6f8d6e-0895-439d-acf4-dac99efa93ef_859167.JPG",
+                                                "areaName": "Chandni chowk ",
+                                                "avgRating": 4.1,
+                                                "cuisines": ["Pizzas", "Fast Food"],
+                                                "sla": { "deliveryTime": 34, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "mock_page_3": {
+        "statusCode": 0,
+        "data": {
+            "pageOffset": {
+                "nextOffset": "mock_page_4"
+            },
+            "cards": [
+                {
+                    "card": {
+                        "card": {
+                            "gridElements": {
+                                "infoWithStyle": {
+                                    "restaurants": [
+                                        {
+                                            "info": {
+                                                "id": "798675",
+                                                "name": "Wow! China",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/22/1c9f2532-e845-4537-8c18-2d5fbe887100_798675.JPG",
+                                                "areaName": "Omaxe Chowk",
+                                                "avgRating": 3.9,
+                                                "cuisines": ["Chinese", "Asian", "fastfood", "Beverages", "Snacks"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "35-45 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "36901",
+                                                "name": "Super Snacks",
+                                                "cloudinaryImageId": "wyv0p2fkepjdih3ilsfh",
+                                                "areaName": "Krishna Nagar",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["North Indian", "South Indian", "Chinese"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹49" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "45622",
+                                                "name": "Gopal Sweets Corner",
+                                                "cloudinaryImageId": "ms0fyojyvisrduycbnby",
+                                                "areaName": "Kamla Nagar",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Sweets", "Snacks", "Street Food", "Indian"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-45 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹59" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "918034",
+                                                "name": "Amritsari Chur Chur Naan",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/29/641718ac-d79f-44b8-8ef4-348054a0fce3_918034.JPG",
+                                                "areaName": "Karol Bagh",
+                                                "avgRating": 4.2,
+                                                "cuisines": ["Thali", "North Indian", "Snacks"],
+                                                "sla": { "deliveryTime": 34, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV2": {}
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "297196",
+                                                "name": "PVR Cafe",
+                                                "cloudinaryImageId": "aprvp2srztpfcm8hkyuu",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["Snacks", "Fast Food", "Beverages"],
+                                                "sla": { "deliveryTime": 34, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "60% OFF", "subHeader": "UPTO ₹120" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "655313",
+                                                "name": "Lucknowee",
+                                                "cloudinaryImageId": "b9167af8d4d7273300ae79c324d55d31",
+                                                "areaName": "Civil Lines",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["rolls", "shawarma", "Kebabs", "Biryani", "North Indian", "Mughlai", "Desserts"],
+                                                "sla": { "deliveryTime": 33, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "651717",
+                                                "name": "BOSS Burger",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/16/4d527c31-ded1-4673-8f4a-9173c042836c_651717.jpg",
+                                                "areaName": "Central",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Burgers", "American", "Fast Food", "Snacks"],
+                                                "sla": { "deliveryTime": 33, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1070512",
+                                                "name": "Delights by INOX",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/2/e0af611f-7da2-4910-b1d6-dde03897c233_1070512.jpg",
+                                                "areaName": "PVR Plaza Delhi",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["Snacks"],
+                                                "sla": { "deliveryTime": 33, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "60% OFF", "subHeader": "UPTO ₹120" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "669431",
+                                                "name": "Smoke House Deli",
+                                                "cloudinaryImageId": "d9816f9441d02f053fb8c90bf43c3fd2",
+                                                "areaName": "Central",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["Italian", "Continental", "Fast Food", "Salads", "Healthy Food", "Pizzas", "Desserts"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-45 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "351751",
+                                                "name": "Jain Dhaba",
+                                                "cloudinaryImageId": "zil28tunoecnty6nva9j",
+                                                "areaName": "Krishna Nagar",
+                                                "avgRating": 4.2,
+                                                "cuisines": ["Tandoor", "Indian", "North Indian"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹59" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "22910",
+                                                "name": "Udupi",
+                                                "cloudinaryImageId": "58163f2183cd8377ba84527dc84ab27b",
+                                                "areaName": "ITO",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["South Indian", "Chinese", "Beverages"],
+                                                "sla": { "deliveryTime": 32, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1005684",
+                                                "name": "Cruffin Premium",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/5/27/7bde0f13-72d4-409a-b6ab-d7afb0545784_1005684.JPG",
+                                                "areaName": "Karol Bagh",
+                                                "avgRating": 4.7,
+                                                "cuisines": ["Desserts", "Bakery", "Cakes"],
+                                                "sla": { "deliveryTime": 34, "serviceability": "SERVICEABLE", "slaString": "30-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "60% OFF", "subHeader": "UPTO ₹120" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "944228",
+                                                "name": "House of Biryan",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/3/24/2bb6de26-26f0-4394-b6b2-5edbc13f09e8_944228.jpg",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.2,
+                                                "cuisines": ["Biryani", "Kebabs", "Rolls"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹69" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "383937",
+                                                "name": "Gulab",
+                                                "cloudinaryImageId": "tph4aohqlvmiphcwi0fo",
+                                                "areaName": "GTB Nagar",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["North Indian", "Sweets", "South Indian"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹49" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "25175",
+                                                "name": "BTW",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/7/8/52332556-f0d8-4a89-ba8c-f293a3a5ed68_25175.JPG",
+                                                "areaName": "Kamla Nagar",
+                                                "avgRating": 4.1,
+                                                "cuisines": ["Street Food", "Indian", "North Indian", "Desserts", "Beverages", "Sweets"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "50% OFF", "discountTag": "FLAT DEAL" }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "mock_page_4": {
+        "statusCode": 0,
+        "data": {
+            "pageOffset": {
+                "nextOffset": null
+            },
+            "cards": [
+                {
+                    "card": {
+                        "card": {
+                            "gridElements": {
+                                "infoWithStyle": {
+                                    "restaurants": [
+                                        {
+                                            "info": {
+                                                "id": "1066442",
+                                                "name": "Vaango",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/1/c552049d-38a8-4ba3-8687-28790de09133_1066442.JPG",
+                                                "areaName": "Chandni Chowk",
+                                                "avgRating": 4.2,
+                                                "cuisines": ["South Indian"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "20% OFF", "subHeader": "UPTO ₹50" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "865596",
+                                                "name": "Costa Coffee",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/2/6/b6848541-0105-43bb-b5ec-f244d1788a64_865596.jpg",
+                                                "areaName": "Omaxe Chowk",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["Beverages", "Cafe", "Bakery", "Desserts", "Snacks"],
+                                                "sla": { "deliveryTime": 32, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹99" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "423598",
+                                                "name": "Kwality Wall's",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/a3682a44-140d-424f-bba2-f02470f26d2b_423598.JPG",
+                                                "areaName": "Shahdara",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Desserts", "Ice Cream", "Ice Cream Cakes"],
+                                                "sla": { "deliveryTime": 41, "serviceability": "SERVICEABLE", "slaString": "40-45 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "重量 OFF", "subHeader": "ABOVE ₹999", "discountTag": "FLAT DEAL" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "467130",
+                                                "name": "Cheesecake & Co.",
+                                                "cloudinaryImageId": "b318c0b4bc2169550145ace1d6e791a2",
+                                                "areaName": "Asaf Ali Road",
+                                                "avgRating": 4.7,
+                                                "cuisines": ["Bakery", "Desserts"],
+                                                "sla": { "deliveryTime": 32, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "50% OFF", "subHeader": "UPTO ₹100" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "18579",
+                                                "name": "Bille Di Hatti",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/1/29/820f254e-83a0-45ec-8742-9f4e984eebc9_18579.jpg",
+                                                "areaName": "Kamla Nagar",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Street Food", "Snacks", "North Indian"],
+                                                "sla": { "deliveryTime": 32, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "₹150 OFF", "subHeader": "ABOVE ₹499", "discountTag": "FLAT DEAL" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "438728",
+                                                "name": "Onlinecake.in",
+                                                "cloudinaryImageId": "pdpgzud3gtrs4w42by6i",
+                                                "areaName": "Laxmi Nagar",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["Bakery"],
+                                                "sla": { "deliveryTime": 34, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "60% OFF", "subHeader": "UPTO ₹120" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "98352",
+                                                "name": "Nagpal Di Hatti",
+                                                "cloudinaryImageId": "tbprrdfgtamn6tnexyxp",
+                                                "areaName": "Geeta Colony",
+                                                "avgRating": 4.5,
+                                                "cuisines": ["North Indian", "Chinese"],
+                                                "sla": { "deliveryTime": 32, "serviceability": "SERVICEABLE", "slaString": "30-35 mins" },
+                                                "aggregatedDiscountInfoV2": {}
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "603471",
+                                                "name": "Jhakkas Pav Bhaji",
+                                                "cloudinaryImageId": "1ab32ae8982c64c11be05dded713e847",
+                                                "areaName": "Azadpur",
+                                                "avgRating": 4.0,
+                                                "cuisines": ["Street Food", "Maharashtrian", "Snacks", "Jain"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "70% OFF", "subHeader": "UPTO ₹140" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1193042",
+                                                "name": "Cakofy",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/5/2/8763a612-997a-4c58-8638-20ca2427583c_1193042.jpg",
+                                                "areaName": "Civil Lines",
+                                                "avgRating": 4.6,
+                                                "cuisines": ["Bakery", "Cakes", "Desserts"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "50% OFF", "discountTag": "FLAT DEAL" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1374602",
+                                                "name": "First Coffee",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/5/18/cac0ecd7-8ee2-4ba3-befc-80eaf3c3c673_1374602.jpg",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["Beverages", "Snacks", "Cafe", "Bakery"],
+                                                "sla": { "deliveryTime": 33, "serviceability": "SERVICEABLE", "slaString": "30-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "50% OFF", "subHeader": "UPTO ₹100" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "955668",
+                                                "name": "Best Bakers",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/17/88b23b90-192e-4a0d-8a3b-2accdf638370_955668.jpg",
+                                                "areaName": "Laxmi Nagar",
+                                                "avgRating": 3.9,
+                                                "cuisines": ["Bakery"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "35-45 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "30% OFF", "subHeader": "UPTO ₹75" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1005436",
+                                                "name": "L'opal",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/5/27/71eb97c9-9cb7-4985-9a3f-da9986eab59a_1005436.JPG",
+                                                "areaName": "Karol Bagh",
+                                                "avgRating": 4.7,
+                                                "cuisines": ["Desserts", "Bakery"],
+                                                "sla": { "deliveryTime": 35, "serviceability": "SERVICEABLE", "slaString": "35-40 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "₹75 OFF", "subHeader": "ABOVE ₹179", "discountTag": "FLAT DEAL" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1249636",
+                                                "name": "Kota Kachori",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/30/1eb4e670-a0c6-459f-8674-ed9d6dae64d1_1249636.jpg",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.4,
+                                                "cuisines": ["Snacks", "Indian"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-45 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹39" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "55833",
+                                                "name": "Nizam's Kathi Kabab",
+                                                "cloudinaryImageId": "sacbbtypo5gbiu7jolye",
+                                                "areaName": "Connaught Place",
+                                                "avgRating": 4.3,
+                                                "cuisines": ["Mughlai", "Kebabs"],
+                                                "sla": { "deliveryTime": 36, "serviceability": "SERVICEABLE", "slaString": "35-45 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹50" }
+                                            }
+                                        },
+                                        {
+                                            "info": {
+                                                "id": "1054037",
+                                                "name": "Dabba & Co.",
+                                                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/19/6b702aa0-e389-495d-bed5-5992b1804aa7_1054037.jpg",
+                                                "areaName": "Shakarpur",
+                                                "avgRating": 4.1,
+                                                "cuisines": ["Home Food", "Indian", "Thalis"],
+                                                "sla": { "deliveryTime": 45, "serviceability": "SERVICEABLE", "slaString": "40-45 mins" },
+                                                "aggregatedDiscountInfoV3": { "header": "ITEMS", "subHeader": "AT ₹99" }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
