@@ -1,0 +1,159 @@
+/* --- ResturantContainer.css --- */
+
+.resturant-wrapper {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /* 📌 THE STICKY HEADER */
+    #header {
+        position: sticky;
+        top: 0;
+        /* Top se kitna neeche chipkega */
+        z-index: 100;
+        /* Sabse upar rakhne ke liye */
+        background-color: #fff;
+        /* V.IMP: Warna neeche ke cards aar-paar dikhenge */
+
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+
+        /* Swiggy jaisa premium soft border aur shadow */
+        border-bottom: 1px solid #f0f0f5;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+
+        /* Taki thoda sa padding mix ho jaye scroll par */
+        padding: 0 10px;
+        margin-left: -10px;
+        margin-right: -10px;
+
+        .available-restros {
+            height: inherit;
+            display: flex;
+            align-items: center;
+            /* Center aligned for better look */
+
+            p {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #282c3f;
+                /* Swiggy's dark text color */
+                margin: 0;
+            }
+        }
+
+        .filters {
+            height: 100%;
+
+            ul {
+                height: inherit;
+                display: flex;
+                align-items: center;
+                column-gap: 12px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li button {
+                    padding: 8px 16px;
+                    background-color: #fff;
+                    color: #3d4152;
+                    font-size: 14px;
+                    font-weight: 500;
+                    border: 1px solid #e2e2e7;
+                    border-radius: 18px;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+
+                    /* 1. HOVER STATE: Jab mouse upar aaye */
+                    &:hover {
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                        border-color: #d4d5d9;
+                        transform: translateY(-1px);
+                    }
+
+                    /* 2. PRESS STATE: Jab user exactly click kar raha ho (Button dabna chahiye) */
+                    &:active {
+                        transform: scale(0.95);
+                    }
+
+                    /* 3. FOCUS STATE: Accessibility ke liye (Agar koi Tab key se navigate kare) */
+                    &:focus-visible {
+                        outline: 2px solid #fc8019;
+                        /* Swiggy ka signature Orange color */
+                        outline-offset: 2px;
+                    }
+
+                    /* 4. SELECTED/ACTIVE CLASS: Jab filter actually apply ho jaye */
+                    &.active-btn {
+                        background-color: #282c3f;
+                        /* Dark background */
+                        color: #ffffff;
+                        /* White text */
+                        border-color: #282c3f;
+                        box-shadow: 0 2px 8px rgba(40, 44, 63, 0.2);
+
+                        /* Agar active button par hover kare */
+                        &:hover {
+                            box-shadow: 0 4px 12px rgba(40, 44, 63, 0.3);
+                            transform: translateY(-1px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* 📱 RESPONSIVE GRID FOR CARDS */
+    .resturant-cards {
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+        /* Flexbox hata kar CSS Grid laga diya */
+        display: grid;
+
+        /* MAGIC LINE: 
+           Agar screen badi hai toh 280px ke hisab se 4 card fit honge.
+           Tablet par 2-3 fit honge.
+           Mobile par 1 ya 2 fit honge.
+        */
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 32px 24px;
+    }
+
+    /* --- Individual Card Styling --- */
+    .restro-card {
+        width: 100%;
+        /* Grid cell ka poora width lega */
+        cursor: pointer;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #fff;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+        /* Card par hover karne par premium pop */
+        &:hover {
+            transform: scale(0.97);
+        }
+
+        figure {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            /* Thodi si badha di taaki aspect ratio sexy lage */
+            border-radius: 16px;
+            overflow: hidden;
+            margin: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* Image ko properly box mein fit karne ke liye */
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.restaurant-info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    font-family: 'Poppins', sans-serif; 
+
+    .breadcrumb {
+        font-size: 10px;
+        color: #93959f;
+        margin-bottom: 24px;
+        letter-spacing: 0.2px;
+
+        span {
+            cursor: pointer;
+            &:hover { color: #282c3f; }
+        }
+        .current {
+            color: #282c3f;
+        }
+    }
+
+    .restaurant-title {
+        font-size: 24px;
+        font-weight: 800;
+        color: #282c3f;
+        margin-bottom: 16px;
+    }
+
+    .info-card-wrapper {
+        background: linear-gradient(to bottom, #ffffff, #e9ecee);
+        border-radius: 24px;
+        padding-bottom: 16px; 
+        
+        .info-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e2e7;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            
+            .rating-price-row {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-weight: 700;
+                color: #3e4152;
+                font-size: 15px;
+
+                .rating-badge {
+                    background-color: #118a27;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .dot {
+                    color: #93959f;
+                }
+            }
+
+            .cuisines {
+                color: #fc8019; 
+                font-size: 13px;
+                font-weight: 600;
+                text-decoration: underline;
+                text-decoration-color: #fc8019;
+                margin-top: 8px;
+                cursor: pointer;
+            }
+
+            .timeline-section {
+                display: flex;
+                gap: 12px;
+                margin-top: 16px;
+                padding-top: 16px;
+                border-top: 1px solid #f0f0f5;
+
+                .timeline-graphics {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 4px;
+
+                    .dot-top {
+                        width: 7px;
+                        height: 7px;
+                        background-color: #c4c4c4;
+                        border-radius: 50%;
+                    }
+                    .line {
+                        width: 1px;
+                        height: 22px;
+                        background-color: #e2e2e7;
+                        margin: 2px 0;
+                    }
+                    .dot-bottom {
+                        width: 7px;
+                        height: 7px;
+                        background-color: #c4c4c4;
+                        border-radius: 50%;
+                    }
+                }
+
+                .timeline-details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 14px;
+                    font-size: 13px;
+
+                    .outlet-info {
+                        .label {
+                            color: #282c3f;
+                            font-weight: 600;
+                            margin-right: 8px;
+                        }
+                        .value {
+                            color: #93959f;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .time-info {
+                        color: #282c3f;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

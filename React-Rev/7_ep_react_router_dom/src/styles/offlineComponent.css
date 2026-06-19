@@ -1,0 +1,124 @@
+/* Container jo poori screen cover karega */
+.offline-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Navbar aur Footer ke beech fit hone ke liye */
+    background-color: #f8f9fa; /* Soft background */
+    font-family: 'Poppins', sans-serif;
+}
+
+.offline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* 🌟 ANIMATION WRAPPER */
+.animated-icon-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* 🌟 1. THE RADAR PULSE EFFECT (Background rings) */
+.radar-pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 128, 25, 0.2); /* Theme Orange */
+    border-radius: 50%;
+    animation: pulse 2s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+/* 🌟 2. THE FLOATING ICON */
+.icon-box {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(252, 128, 25, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* SVG Styling */
+.food-offline-svg {
+    width: 40px;
+    height: 40px;
+    color: #282c3f; /* Dark grey theme color */
+}
+
+.slash-line {
+    stroke: #fc8019; /* Orange slash for error */
+    stroke-width: 3;
+}
+
+/* 🌟 TYPOGRAPHY */
+.offline-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #282c3f;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.offline-subtitle {
+    font-size: 1.1rem;
+    color: #686b78; /* Swiggy-like muted text */
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+}
+
+/* 🌟 THEME BUTTON (Pill Shape) */
+.retry-btn {
+    background: linear-gradient(90deg, #fc8019, #fd9944);
+    color: white;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px; /* Perfect pill shape */
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(252, 128, 25, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.retry-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(252, 128, 25, 0.4);
+}
+
+.retry-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(252, 128, 25, 0.3);
+}

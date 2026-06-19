@@ -1,0 +1,151 @@
+
+
+.promoted-restro-card {
+    /* Ye container relative hona zaroori hai taaki label iske andar absolute reh sake */
+    position: relative; 
+    
+    /* Hover effect is parent pe lagana hai taaki label aur card dono ek sath scale ho */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* 🎬 HOVER EFFECT: Ab HOC wale div par hover karne se andar ka card shrink hoga */
+.promoted-restro-card:hover .restro-card {
+    transform: scale(0.97);
+}
+
+/* Label (Promoted Badge) Styling */
+.promoted-restro-card label {
+    position: absolute;
+    top: 12px;
+    left: 12px; /* Top-Left corner par chipkane ke liye */
+    
+    background-color: rgba(30, 32, 34, 0.9); /* Swiggy style dark premium gray */
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    z-index: 10; /* Image aur uske gradient ke upar rakhne ke liye */
+    
+    /* Pointer events none karne se label par click karne par card ka click block nahi hoga */
+    pointer-events: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.restro-card {
+    width: 330px; /* Swiggy ka standard card size around 300px-330px hota hai */
+    cursor: pointer;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    
+    /* ✨ Smooth transition jab poora card interact kare */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* 🎬 HOVER EFFECT: Poore card ko subtle shrink/press effect dene ke liye */
+.restro-card:hover {
+    transform: scale(0.97); /* Card halka sa andar dabega (shrink hoga) click-feel ke liye */
+}
+
+/* --- Image Container Section --- */
+.restro-card figure {
+    position: relative;
+    width: 100%;
+    height: 182px; /* Standard aspect ratio aspect for food display */
+    border-radius: 16px; /* Image container ke corners round */
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Gradient Overlay: Taaki white text background image mein chhup na jaye */
+.restro-card figure::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Sirf bottom half ko dark karega */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.restro-card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    /* ✨ Image smooth zoom/scale animation capability */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 🎬 HOVER EFFECT: Card par hover hote hi IMAGE zoom-in hogi */
+.restro-card:hover figure img {
+    transform: scale(1.06); /* Image smoothly halki si badi ho jayegi */
+}
+
+/* --- Figcaption (Offer Text) --- */
+.restro-card figcaption {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.35rem; /* Bold aur bada size jaise original app mein hai */
+    font-weight: 800;   /* Heavy font weight */
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    z-index: 2; /* Gradient overlay ke upar rakhne ke liye */
+}
+
+/* --- Restaurant Details (Text Section) --- */
+.restro-details {
+    padding: 12px 8px 4px 8px; /* Standard margins */
+}
+
+.restro-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1c1c1c;
+    margin: 0 0 4px 0;
+    
+    /* Text truncate agar naam bohot lamba ho */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Rating and Time Container */
+.rating-time {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #363636;
+    margin-bottom: 4px;
+}
+
+.star-icon {
+    background-color: #24963f; /* Swiggy Green */
+    color: white;
+    font-size: 0.75rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cuisine & Location Text styling */
+.cuisine, .location {
+    font-size: 0.9rem;
+    color: #696969; /* Muted slate gray */
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

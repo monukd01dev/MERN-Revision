@@ -1,0 +1,194 @@
+/* Wrapper: Centered and responsive */
+.menu-shimmer-wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 🌟 THE MAGIC ANIMATION (Premium Skeleton Effect) */
+.animate-shimmer {
+    background: #e2e4e8; /* Thoda dark base color */
+    background-image: linear-gradient(
+        to right,
+        #e2e4e8 0%,
+        #f0f2f5 20%,
+        #e2e4e8 40%,
+        #e2e4e8 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 1000px 100%;
+    animation: shimmerEffect 1.5s infinite linear forwards;
+}
+
+@keyframes shimmerEffect {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Basic Lines */
+.shimmer-breadcrumb {
+    width: 25%;
+    height: 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.shimmer-title {
+    width: 40%;
+    height: 32px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.shimmer-subtitle {
+    width: 20%;
+    height: 24px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.shimmer-line {
+    height: 14px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.shimmer-line.short {
+    width: 40%;
+}
+
+.shimmer-line.medium {
+    width: 60%;
+}
+
+.shimmer-line.long {
+    width: 80%;
+}
+
+/* Info Card (Section 1) */
+.shimmer-info-card {
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Extra subtle background for the card itself */
+    background-color: #ffffff; 
+    border: 1px solid #e8e8e8;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+/* Offers Slider (Section 2) */
+.shimmer-offers-slider {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.shimmer-offer-card {
+    min-width: 280px;
+    flex: 1;
+    height: 85px;
+    border-radius: 16px;
+}
+
+/* Menu Divider */
+.shimmer-menu-divider {
+    width: 100px;
+    height: 12px;
+    border-radius: 4px;
+    margin: 20px auto;
+}
+
+/* Search and Filters (Section 3) */
+.shimmer-search-bar {
+    width: 100%;
+    height: 48px;
+    border-radius: 12px;
+}
+
+.shimmer-filters {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.shimmer-filter-pill {
+    width: 90px;
+    height: 36px;
+    border-radius: 20px;
+}
+
+/* Menu List Items */
+.shimmer-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.shimmer-menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.shimmer-item-details {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.shimmer-item-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+/* Responsive Rules for Mobile Devices */
+@media (max-width: 600px) {
+    .shimmer-breadcrumb {
+        width: 40%;
+    }
+
+    .shimmer-title {
+        width: 60%;
+    }
+
+    .shimmer-subtitle {
+        width: 40%;
+    }
+
+    /* Hide the 3rd offer card on mobile so the first two look naturally cut off (scrollable feel) */
+    .hide-mobile {
+        display: none;
+    }
+
+    .shimmer-offer-card {
+        min-width: 80%;
+        /* Takes up 80% of screen width on mobile */
+    }
+
+    .shimmer-item-image {
+        width: 100px;
+        height: 100px;
+    }
+}

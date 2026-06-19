@@ -1,0 +1,14 @@
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .main-content {
+    flex: 1; /* Yahi wo jadoo hai jo footer ko neeche dhakel dega! */
+    
+    /* Agar tujhe outlet content ke aas-paas thodi space chahiye toh */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+}

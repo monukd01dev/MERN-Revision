@@ -1,0 +1,14 @@
+main{
+    .main-wrapper{
+        /* border: 1px solid black; */
+        min-height: 100vh;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f8fafc;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        
+    }
+}

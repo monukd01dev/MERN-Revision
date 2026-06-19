@@ -1,0 +1,116 @@
+.slider-container {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 10px 16px;
+    font-family: 'Poppins', sans-serif;
+
+    .slider {
+         
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0 20px 0;
+
+            .title {
+                font-size: 20px;
+                font-weight: 800;
+                color: #282c3f;
+                margin: 0;
+            }
+
+            .slider-btns {
+                display: flex;
+                column-gap: 12px;
+
+                .nav-btn {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: #e2e2e7;
+                    color: #282c3f;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: background-color 0.2s ease, opacity 0.2s ease;
+
+                    &:hover:not(:disabled) {
+                        background-color: #d4d5d9;
+                    }
+
+                    &:active:not(:disabled) {
+                        transform: scale(0.95);
+                    }
+
+                    &:disabled {
+                        opacity: 0.5;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+
+        .slider-viewport {
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 10px; 
+            
+            /* Scrollbar chupane ke liye (optional but looks clean) */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            .offer-card {
+                min-width: 270px;  
+                display: flex;
+                column-gap: 12px;
+                align-items: center;
+                padding: 12px 16px;
+                border: 1px solid #e2e2e7; 
+                border-radius: 12px; 
+                background-color: #ffffff;
+                flex-shrink: 0;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+
+                .offer-img {
+                    width: 44px;
+                    height: 44px;
+                    flex-shrink: 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .offer-detail {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .offer-header {
+                        font-size: 15px;
+                        color: #282c3f;
+                        font-weight: 800;
+                        margin-bottom: 4px;
+                    }
+                    
+                    .coupon-code {
+                        font-size: 11px;
+                        color: #93959f;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
