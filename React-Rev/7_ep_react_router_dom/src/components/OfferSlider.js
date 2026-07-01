@@ -42,7 +42,7 @@ const OfferSlider = ({offers}) => {
                                     {offer.info.header}
                                 </div>
                                 <div className="coupon-code">
-                                    {offer.info.couponCode} {offer.info.description ? `| ${offer.info.description}` : ''}
+                                    {offer.info.couponCode ? offer.info.couponCode : offer.info.description } 
                                 </div>
                             </div>
                         </div>

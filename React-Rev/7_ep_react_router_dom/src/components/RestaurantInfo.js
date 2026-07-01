@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router'
 const RestaurantInfo = ({ restaurantData,resName }) => {
     
     // const name = "Chinese Wok";
@@ -17,14 +17,15 @@ const RestaurantInfo = ({ restaurantData,resName }) => {
         costForTwoMessage,
         cuisines,
         locality,
-        sla
+        sla,
+        id
     } = restaurantData;
 
     return (
         <div className="restaurant-info-container">
             {/* Breadcrumbs */}
             <div className="breadcrumb">
-                <span>Home</span> / <span>{city}</span> / <span className="current">{resName}</span>
+                <Link to="/"><span>Home</span></Link> /<Link to="/"> <span>{city}</span> </Link> /<Link to={`/restaurants/${name}/${id}`}> <span className="current">{resName}</span> </Link>
             </div>
 
             {/* Title */}

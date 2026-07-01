@@ -25,16 +25,16 @@ const useRestaurantMenu = (resId) => {
     async function fetchRestaurantMenu(resId) {
 
         try {
-            console.log(typeof resId)
+            
                                           
             await new Promise((resolve)=>setTimeout(resolve,1000))
-            console.log(availabelRestaurantMenu.has(Number(resId)))
+            
             const finalResId = availabelRestaurantMenu.has(Number(resId)) ? resId : getRandomResId()
             
             
             const data = MOCK_MENUS[`${finalResId}`]
             
-            console.log(data)
+            
 
             setResMenu(data)
 
@@ -48,8 +48,15 @@ const useRestaurantMenu = (resId) => {
     if(resMenu){
         resDetail = resMenu?.data?.cards[2]?.card?.card?.info;
         offers = resMenu?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.offers;
-        menu = resMenu?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
-        console.log(menu)
+        menu = resMenu?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(categroy=>{
+            if(categroy.card.card["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory" || categroy.card.card["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory"){
+
+                return true
+            }else{
+                return false
+            }
+        })
+       
     }
 
 

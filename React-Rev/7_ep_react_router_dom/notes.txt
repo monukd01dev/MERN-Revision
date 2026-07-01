@@ -1,3 +1,10 @@
 restaurant details -> data.cards[2].card.card.info
 restaurant Offers -> data.cards[3].card.card.gridElements.infoWithStyle.offers
 restaurant menu accordina address -> data.cards[4].groupedCard.cardGroupMap.REGULAR.cards
+                                     data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card.card.itemCards
+                                     data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card.card.@type
+                                     data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[5].card.card.@type
+                                     data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[5].card.card
+
+veg ke liye - isVeg property aati hai 
+non-veg ke liye kuch bhi nhi 

@@ -1,0 +1,111 @@
+body{
+    background-color: #11131a;
+    color: #eceef3;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box-1 , .box-2 {
+    border: 5px solid
+     #2c3040;
+    /* width: 400px; */
+    height: 200px;
+    margin: 20px;
+    background-image: url('https://picsum.photos/id/237/1920/1080');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 20px / 10px;
+}
+
+.box-2{
+    background-image: url('https://picsum.photos/seed/picsum/200/300');
+    /* width:0px; */
+    padding: 10px;
+    background-position: bottom ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+
+
+
+}
+.box-3{
+    border: 5px solid #2c3040;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    text-transform: lowercase;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-size: 18px;
+    /* line-height: ; line-height: fontsize ka multiple hota hai / */
+    line-height: 1.5;
+    font-style: oblique;
+}
+
+.parent { margin-top: 0; }
+.child { margin-top: 50px; }
+input:invalid{
+    background-color: red;
+}
+.tooltip-btn {
+  position: relative;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tooltip-btn::after {
+  content: attr(data-tooltip);   /* 👈 yahi magic line hai */
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.tooltip-btn:hover::after {
+  opacity: 1;
+}
+
+span{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+.box1{
+ margin: 20px;
+ width: 300px;
+ height: 300px;
+ border: 1px solid white;
+ position: relative;
+}
+.ball{
+    height: 100px;
+    width: 100px;
+    background: gray;
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5) skewX(2deg);
+    /* transform: scale(0.5); */
+}

@@ -3,6 +3,8 @@ import useRestaurantMenu from "../../utils/hooks/useRestaurantMenu";
 import RestaurantMenuShimmer from "../components/RestaurantMenuShimmer";
 import RestaurantInfo from "../components/RestaurantInfo";
 import OfferSlider from "../components/OfferSlider";
+import ItemCard from "../components/ItemCard";
+import RestaurantMenu from "../components/RestaurantMenu";
 const Restaurant = function(){
 
     const {resName,resId} = useParams()
@@ -14,6 +16,10 @@ const Restaurant = function(){
     <div className="restaurants-menu-wrapper">
         <RestaurantInfo restaurantData={resDetail} resName ={resName}/>
         <OfferSlider offers={offers}/>
+        <RestaurantMenu menu={menu}/>
+        {/* {
+            menu[1].card.card.itemCards.map(item => <ItemCard key={item.card.info.id} itemData={item.card.info}/>)
+        } */}
     </div>
     )
 } 
