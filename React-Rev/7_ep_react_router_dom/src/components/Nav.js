@@ -1,6 +1,10 @@
-import { Link } from 'react-router'; // Hamesha react-router-dom use kar for web
-
+import { Link } from 'react-router'; // Hamesha react-router
+import { FaCartShopping } from "react-icons/fa6";
+import { useSelector } from 'react-redux';
 const Nav = function() {
+
+    const cartItems = useSelector(store=> store.cart.items);
+    console.log(cartItems)
     return (
         <nav>
             <div className="head-wrapper">
@@ -17,7 +21,7 @@ const Nav = function() {
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/about-us'>About</Link></li>
                         <li><Link to='/contact-us'>Contact-Us</Link></li>
-                        <li><Link to='/cart'>Cart</Link></li>
+                        <li><Link to='/cart'><FaCartShopping /> ({cartItems.length})</Link></li>
                     </ul>
                 </div>
             </div>

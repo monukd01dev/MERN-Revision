@@ -111,17 +111,24 @@
 }
 
 .add-btn {
+    width: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #fff;
     color: #1ea32a; /* Swiggy Green */
     font-weight: 800;
     font-size: 0.9rem;
-    padding: 8px 30px;
+    padding: 8px 10px;
     border: 1px solid #d4d5d9;
     border-radius: 4px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.2s ease;
+}
+.add-btn.justify-center {
+    justify-content: center;
 }
 
 .add-btn:hover {
