@@ -7,7 +7,7 @@ const useOnlineStatus = () => {
     useEffect(() => {
 
         // maine anonymous funciton nhi diya kyonki unhe remove bhi to karna tha 
-        const setStatusOnline = () =>OnlineStatus
+        const setStatusOnline = () => setIsOnline(true)
         const setStatusOffline = () => setIsOnline(false)
 
         window.addEventListener('online', setStatusOnline)
@@ -23,3 +23,4 @@ const useOnlineStatus = () => {
 }
 
 export default useOnlineStatus
+

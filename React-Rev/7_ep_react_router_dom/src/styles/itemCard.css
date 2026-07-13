@@ -1,143 +1,147 @@
-/* Container: Flexbox to push details left and image right */
+/* Main Container */
 .item-card {
     display: flex;
     justify-content: space-between;
     padding: 24px 16px;
     border-bottom: 1px solid #e0e0e0;
     background-color: #f8fafc;
-}
+    transition: all 0.3s ease;
 
-/* --- Left Section (Text Details) --- */
-.item-details {
-    flex: 1; /* Pura bacha hua space le lega */
-    padding-right: 20px;
-}
+    /* ========================================= */
+    /* 🛒 CART SPECIFIC OVERRIDES */
+    /* ========================================= */
+    &.cart-version {
+        border-bottom: none; /* Black line uda di */
+        border-radius: 16px; /* Smooth corners */
+        background-color: #fff;
+        padding: 16px; /* Cart ke hisaab se thodi compact padding */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Premium floating feel */
+        margin-bottom: 8px; /* Items ke beech gap ke liye */
+    }
 
-/* Veg / Non-Veg Square & Circle Icon CSS trick */
-.veg-icon {
-    width: 14px;
-    height: 14px;
-    border: 1px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-    margin-bottom: 6px;
-}
+    /* --- Left Section (Text Details) --- */
+    .item-details {
+        flex: 1;
+        padding-right: 20px;
 
-.veg-icon.veg {
-    border-color: #0f8a65; /* Green */
-}
-.veg-icon.veg .circle {
-    background-color: #0f8a65;
-}
+        .veg-icon {
+            width: 14px;
+            height: 14px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px;
+            margin-bottom: 6px;
 
-.veg-icon.non-veg {
-    border-color: #e43b4f; /* Red */
-}
-.veg-icon.non-veg .circle {
-    background-color: #e43b4f;
-}
+            &.veg { border-color: #0f8a65; }
+            &.veg .circle { background-color: #0f8a65; }
+            
+            &.non-veg { border-color: #e43b4f; }
+            &.non-veg .circle { background-color: #e43b4f; }
 
-.veg-icon .circle {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-}
+            .circle {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+            }
+        }
 
-.item-name {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #3e4152;
-    margin: 0 0 4px 0;
-}
+        .item-name {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #3e4152;
+            margin: 0 0 4px 0;
+        }
 
-.item-price {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #3e4152;
-    margin: 0 0 12px 0;
-}
+        .item-price {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #3e4152;
+            margin: 0 0 12px 0;
+        }
 
-/* Description 2 line ke baad ...more lag jayega apne aap */
-.item-desc {
-    font-size: 0.85rem;
-    color: #282c3f;
-    line-height: 1.3;
-    opacity: 0.6;
-    margin: 0;
-    
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Kitni lines dikhani hain */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
+        .item-desc {
+            font-size: 0.85rem;
+            color: #282c3f;
+            line-height: 1.3;
+            opacity: 0.6;
+            margin: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
 
-/* --- Right Section (Image & Button) --- */
-.item-image-section {
-    position: relative;
-    width: 118px; /* Fixed width taaki alignment kharab na ho */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    /* --- Right Section (Image & Button) --- */
+    .item-image-section {
+        position: relative;
+        width: 118px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-.image-container {
-    width: 118px;
-    height: 96px;
-    border-radius: 8px;
-    overflow: hidden;
-}
+        .image-container {
+            width: 118px;
+            height: 96px;
+            border-radius: 8px;
+            overflow: hidden;
 
-.item-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+            .item-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
 
-.no-image-placeholder {
-    width: 100%;
-    height: 100%;
-    background-color: #f6f6f6; /* Agar image na ho toh halka grey box */
-}
+            .no-image-placeholder {
+                width: 100%;
+                height: 100%;
+                background-color: #f6f6f6;
+            }
+        }
 
-/* Button Overlap Logic */
-.add-btn-container {
-    position: absolute;
-    bottom: -12px; /* Image se thoda niche latkane ke liye */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        /* Button Logic */
+        .add-btn-container {
+            position: absolute;
+            bottom: -12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-.add-btn {
-    width: 93px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    color: #1ea32a; /* Swiggy Green */
-    font-weight: 800;
-    font-size: 0.9rem;
-    padding: 8px 10px;
-    border: 1px solid #d4d5d9;
-    border-radius: 4px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.2s ease;
-}
-.add-btn.justify-center {
-    justify-content: center;
-}
+            .add-btn {
+                width: 93px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #fff;
+                color: #1ea32a;
+                font-weight: 800;
+                font-size: 0.9rem;
+                padding: 8px 10px;
+                border: 1px solid #d4d5d9;
+                border-radius: 4px;
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+                cursor: pointer;
+                text-transform: uppercase;
+                transition: all 0.2s ease;
 
-.add-btn:hover {
-    background-color: #e9eaec;
-}
+                &.justify-center {
+                    justify-content: center;
+                }
 
-.customisable-text {
-    font-size: 0.65rem;
-    color: #7e808c;
-    margin-top: 4px;
-    font-weight: 500;
+                /* 🔥 NEW HOVER EFFECT: Dark background hataya, clean shadow effect dala */
+                &:hover {
+                    background-color: #fff; /* White hi rahega */
+                    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* Thodi deep shadow */
+                    transform: translateY(-2px); /* Halka sa upar uthega */
+                }
+
+                &:active {
+                    transform: translateY(1px); /* Click feel */
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
 }

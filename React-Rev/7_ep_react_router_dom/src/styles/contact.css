@@ -1,0 +1,109 @@
+.contact-wrapper {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 0 24px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .contact-content {
+        .contact-title {
+            font-size: 3rem;
+            font-weight: 900;
+            color: rgba(2, 6, 12, 0.92);
+            margin: 0 0 8px 0;
+            letter-spacing: -1px;
+        }
+
+        .contact-sub {
+            font-size: 1.1rem;
+            color: rgba(2, 6, 12, 0.6);
+            margin-bottom: 40px;
+        }
+    }
+
+    .pro-form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .input-row {
+            display: flex;
+            gap: 24px;
+            
+            @media (max-width: 600px) {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .input-group {
+                flex: 1;
+            }
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            label {
+                font-size: 0.9rem;
+                font-weight: 700;
+                color: rgba(2, 6, 12, 0.92);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 16px 20px;
+                background-color: #f8fafc;
+                border: 2px solid transparent;
+                border-radius: 12px;
+                font-size: 1.05rem;
+                color: rgba(2, 6, 12, 0.92);
+                transition: all 0.3s ease;
+                font-family: inherit;
+
+                &::placeholder {
+                    color: rgba(2, 6, 12, 0.3);
+                }
+
+                &:focus {
+                    outline: none;
+                    background-color: #fff;
+                    border-color: rgba(2, 6, 12, 0.92);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+                }
+            }
+
+            textarea {
+                resize: vertical;
+            }
+        }
+
+        .pro-submit {
+            background-color: rgba(2, 6, 12, 0.92);
+            color: #fff;
+            border: none;
+            padding: 18px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 16px;
+
+            &:hover {
+                background-color: #000;
+                transform: translateY(-4px);
+                box-shadow: 0 12px 24px rgba(2, 6, 12, 0.15);
+            }
+
+            &:active {
+                transform: translateY(0);
+            }
+        }
+    }
+}

@@ -3,12 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { addItem, removeItem } from '../redux/cartSlice';
 import { FiPlus, FiMinus } from 'react-icons/fi'
 
-const ItemCard = ({ itemData }) => {
+const ItemCard = ({ itemData, isCartItem }) => {
 
     const cartDispatcher = useDispatch();
     const cartItems = useSelector(store => store.cart.items);
-
-    // Data destructuring taaki baar-baar itemData.info na likhna pade
+    
+    // Data destructuring
     const {
         id,
         name,
@@ -20,18 +20,21 @@ const ItemCard = ({ itemData }) => {
     } = itemData;
 
     const thisItem = cartItems.find((item) => item.id === id)
-
-    // Swiggy price paise mein bhejta hai, isliye / 100
     const finalPrice = (price || defaultPrice) / 100;
 
     function handleAddItem(itemData) {
         cartDispatcher(addItem(itemData))
     }
+    
     function handleRemoveItem(itemData) {
         cartDispatcher(removeItem(itemData))
     }
+
     return (
-        <div className="item-card">
+        <>
+        {/* Dynamic Class: Agar isCartItem true hai, toh cart-version class lag jayegi */}
+        <div className={`item-card ${isCartItem ? 'cart-version' : ''}`}>
+            
             {/* Left Section: Details */}
             <div className="item-details">
                 {/* Veg / Non-Veg Indicator */}
@@ -42,7 +45,8 @@ const ItemCard = ({ itemData }) => {
                 <h3 className="item-name">{name}</h3>
                 <p className="item-price">₹{finalPrice}</p>
 
-                {description && (
+                {/* 🔥 MAGIC: Description sirf tab dikhega jab cart mein NAHI hoga */}
+                {description && !isCartItem && (
                     <p className="item-desc">{description}</p>
                 )}
             </div>
@@ -50,7 +54,6 @@ const ItemCard = ({ itemData }) => {
             {/* Right Section: Image & Add Button */}
             <div className="item-image-section">
                 <div className="image-container">
-                    {/* Agar imageId nahi hai toh khali box mat dikhao */}
                     {imageId ? (
                         <img
                             src={`${CLOUDINARY_URL}${imageId}`}
@@ -62,7 +65,7 @@ const ItemCard = ({ itemData }) => {
                     )}
                 </div>
 
-                {/* Add Button - Image ke upar overlap karega */}
+                {/* Add Button Section */}
                 <div className="add-btn-container">
                     <button
                         className={`add-btn ${!thisItem ? 'justify-center' : ''}`} 
@@ -72,14 +75,14 @@ const ItemCard = ({ itemData }) => {
                             <>
                                 <FiMinus
                                     onClick={(e) => {
-                                        e.stopPropagation(); // Parent button ka click trigger nahi hone dega
+                                        e.stopPropagation(); 
                                         handleRemoveItem({ id, name, price, defaultPrice, description, imageId, isVeg, quantity: 1 });
                                     }}
                                 />
                                 {thisItem.quantity}
                                 <FiPlus
                                     onClick={(e) => {
-                                        e.stopPropagation(); // Parent button ka click trigger nahi hone dega
+                                        e.stopPropagation(); 
                                         handleAddItem({ id, name, price, defaultPrice, description, imageId, isVeg, quantity: 1 });
                                     }}
                                 />
@@ -88,12 +91,11 @@ const ItemCard = ({ itemData }) => {
                             "ADD"
                         )}
                     </button>
-
-                    {/* Chota sa text button ke niche */}
-                    <span className="customisable-text">Customisable</span>
+                    {/* Yahan se "Customisable" ka kachra poori tarah saaf kar diya */}
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

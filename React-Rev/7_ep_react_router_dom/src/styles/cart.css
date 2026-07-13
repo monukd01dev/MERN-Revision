@@ -1,0 +1,186 @@
+/* Main Wrapper (Strict Scoping) */
+.cart-wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 16px;
+    min-height: 60vh;
+
+    /* ========================================= */
+    /* 🛒 EMPTY CART STATE */
+    /* ========================================= */
+    .empty-cart-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        text-align: center;
+        animation: fadeIn 0.4s ease-out;
+
+        .animated-cart-icon {
+            margin-bottom: 24px;
+            animation: floatUpDown 3s ease-in-out infinite; /* Smooth floating animation */
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: rgba(2, 6, 12, 0.92);
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: rgba(2, 6, 12, 0.6);
+            max-width: 300px;
+            line-height: 1.5;
+        }
+    }
+
+    /* ========================================= */
+    /* 🍔 FILLED CART LAYOUT */
+    /* ========================================= */
+    .cart-content-wrapper {
+        display: flex;
+        gap: 32px;
+        align-items: flex-start; /* Taaki right side wala card stretch na ho */
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    /* --- Left Column: Items --- */
+    .cart-items-displayer {
+        flex: 2; /* 66% width on desktop */
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+        padding: 24px;
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(2, 6, 12, 0.05);
+
+            h3 {
+                margin: 0;
+                font-size: 1.25rem;
+                font-weight: 800;
+                color: rgba(2, 6, 12, 0.92);
+            }
+
+            .clear-btn {
+                background: rgba(2, 6, 12, 0.05);
+                border: none;
+                color: #e43b4f;
+                font-weight: 700;
+                padding: 8px 16px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background 0.2s ease;
+
+                &:hover {
+                    background: rgba(228, 59, 79, 0.1);
+                }
+            }
+        }
+
+        /* Item Entrance Animation Logic */
+        .itemCards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .cart-item-wrapper {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUpFade 0.4s ease forwards;
+        }
+    }
+
+    /* --- Right Column: Order Summary --- */
+    .cart-summary-container {
+        flex: 1; /* 33% width on desktop */
+        position: sticky;
+        top: 24px; /* Scroll karne par upar chipka rahega */
+    }
+
+    .order-summary-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Thoda deep shadow for premium look */
+        border: 1px solid rgba(2, 6, 12, 0.05);
+
+        .summary-title {
+            margin: 0 0 20px 0;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: rgba(2, 6, 12, 0.92);
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: rgba(2, 6, 12, 0.65);
+            margin-bottom: 14px;
+            font-weight: 500;
+
+            &.discount-row {
+                color: #0f8a65; /* Swiggy Green for Discount */
+                font-weight: 600;
+            }
+
+            &.total-pay-row {
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: rgba(2, 6, 12, 0.92);
+                margin-bottom: 0;
+                margin-top: 20px;
+            }
+        }
+
+        .summary-divider {
+            height: 1px;
+            background-color: rgba(2, 6, 12, 0.1);
+            margin: 16px 0;
+
+            &.thick {
+                height: 2px;
+                background-color: rgba(2, 6, 12, 0.92); /* Black bold line just before Total */
+            }
+        }
+    }
+}
+
+/* ========================================= */
+/* 🚀 GLOBAL KEYFRAMES (Root level for Parcel) */
+/* ========================================= */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
